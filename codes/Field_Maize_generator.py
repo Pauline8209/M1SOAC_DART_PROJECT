@@ -11,10 +11,10 @@ Authors :   - Cousseau Pauline
 import numpy as np
 
 # Paramètres du champ
-l_total = 100       # Longueur (m)
-L_total = 100       # Largeur (m)
-row_space = 0.6     # Distance entre les rangs (X)
-col_space = 0.3     # Distance entre les plants (Y)
+l_total = 10        # Longueur (m)
+L_total = 10        # Largeur (m)
+row_space = 0.75    # Distance entre les rangs (X)
+col_space = 0.13    # Distance entre les plants (Y)
 
 # Index des modèles DART
 FEMALE_CORN = 0
@@ -22,7 +22,7 @@ MALE_CORN = 1
 
 # Paramètres de transformation par défaut
 pos_z = 0
-scale_x, scale_y, scale_z = 1, 1, 1
+scale_x, scale_y, scale_z = 1, 1, 0.8
 rot_x, rot_y, rot_z = 0, 0, 0
 
 header = """
@@ -34,7 +34,7 @@ complete transformation
 
 """
 
-filename = "field_maize_config.txt"
+filename = r"data/field_maize_config.txt"
 
 with open(filename, "w") as f:
     f.write(header)
