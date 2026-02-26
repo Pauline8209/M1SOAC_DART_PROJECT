@@ -21,7 +21,7 @@ con = sqlite3.connect(db_mode_R)
 cur = con.cursor()
 df1 = pd.read_sql_query("SELECT valueResult AS exitance_R from Exitance LIMIT 20 ", con)
 df2 = pd.read_sql_query("SELECT valueCentralWavelength AS lambda_R from SpectralBand LIMIT 20", con)*1e6
-df3 = pd.read_sql_query("SELECT valueResult AS radiance_R from Radiance LIMIT 20 ", con)
+df3 = pd.read_sql_query("SELECT valueResult AS irradiance_R from Irradiance LIMIT 20 ", con)
 con.close()
 df = df1.join(df2).join(df3)
 
@@ -29,7 +29,7 @@ con = sqlite3.connect(db_mode_T)
 cur = con.cursor()
 df4 = pd.read_sql_query("SELECT valueResult AS exitance_T from Exitance LIMIT 20 ", con)
 df5 = pd.read_sql_query("SELECT valueCentralWavelength AS lambda_T from SpectralBand LIMIT 20", con)*1e6
-df6 = pd.read_sql_query("SELECT valueResult AS radiance_T from Radiance LIMIT 20 ", con)
+df6 = pd.read_sql_query("SELECT valueResult AS irradiance_T from Irradiance LIMIT 20 ", con)
 con.close()
 df = df.join(df4).join(df5).join(df6)
 
@@ -44,10 +44,10 @@ def spectralIntegration(rad=None,waveLength=None):
 
 
 ### Function calls to calculate Rn
-SW_in = spectralIntegration(rad=df["exitance_R"], waveLength=df["lambda_R"])
-SW_out = spectralIntegration(rad=df["radiance_R"], waveLength=df["lambda_R"])
-LW_in = spectralIntegration(rad=df["exitance_T"], waveLength=df["lambda_T"])
-LW_out = spectralIntegration(rad=df["radiance_T"], waveLength=df["lambda_T"])
+SW_out = spectralIntegration(rad=df["exitance_R"], waveLength=df["lambda_R"])   # albedo ?
+SW_in = spectralIntegration(rad=df["irradiance_R"], waveLength=df["lambda_R"])
+LW_out = spectralIntegration(rad=df["exitance_T"], waveLength=df["lambda_T"])   # emission #émmitance ?
+LW_in = spectralIntegration(rad=df["irradiance_T"], waveLength=df["lambda_T"])  # eclairement
 
 Rn = SW_in + LW_in - SW_out - LW_out
 print(f"{Rn=:.3f} W/m²")
