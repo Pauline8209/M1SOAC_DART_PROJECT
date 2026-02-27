@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DartFile build="v1457" version="5.11.0">
+    <object_3d generateTriangleFileXML="0">
+        <Types>
+            <DefaultTypes>
+                <DefaultType indexOT="101" name="Default_Object" typeColor="125 0 125"/>
+                <DefaultType indexOT="102" name="Leaf" typeColor="57 118 38"/>
+                <DefaultType indexOT="103" name="Trunk" typeColor="71 55 25"/>
+            </DefaultTypes>
+            <CustomTypes>
+                <Type indexOT="104" name="Corns_color" typeColor="255 255 51"/>
+                <Type indexOT="105" name="Panicle_color" typeColor="153 165 10"/>
+            </CustomTypes>
+        </Types>
+        <ObjectList/>
+        <ObjectFields>
+            <Field
+                fieldDescriptionFileName="3D_Objects\Fields\Field_Maize_Config.txt"
+                name="Field" showObjectPositions="1">
+                <ModelList>
+                    <Object
+                        file_src="3D_Objects\Maize\Maize_InField_2m_corns.obj"
+                        hasGroups="1" hidden="0" hideRB="0"
+                        isDisplayed="1" name="corn" num="0"
+                        objectColor="125 0 125" objectDEMMode="0" repeatedOnBorder="1">
+                        <GeometricProperties>
+                            <Dimension3D xdim="0.7075330018997192"
+                                ydim="1.0048369765281677" zdim="2.000269951822702"/>
+                            <Center3D xCenter="0.06440049409866333"
+                                yCenter="-0.022536486387252808" zCenter="1.000601975916652"/>
+                            <ScaleProperties xScaleDeviation="0.0"
+                                xscale="1.00" yScaleDeviation="0.0"
+                                yscale="1.00" zScaleDeviation="0.0" zscale="1.00"/>
+                            <RotationProperties xRotDeviation="0.0"
+                                xrot="0.00" yRotDeviation="0.0"
+                                yrot="0.00" zRotDeviation="0.0" zrot="0.00"/>
+                        </GeometricProperties>
+                        <ObjectOpticalProperties defineEtaFactors="0"
+                            isLAICalc="0" isSingleGlobalLai="0"
+                            sameExitanceObject="0" sameOPObject="0" transparent="0"/>
+                        <ObjectTypeProperties sameOTObject="0"/>
+                        <Groups>
+                            <Group groupDEMMode="0" hidden="0"
+                                hideRB="0" isLAICalc="0" name="Corns"
+                                num="1" transparent="0">
+                                <GroupOpticalProperties>
+                                    <SurfaceOpticalProperties doubleFace="0">
+                                    <OpticalPropertyLink
+                                    ident="Lambertian_Phase_Function_1"
+                                    indexFctPhase="0" type="0"/>
+                                    </SurfaceOpticalProperties>
+                                    <SurfaceExitanceProperties
+                                    doubleFace="0" useTemperaturePerTriangle="0">
+                                    <ThermalPropertyLink
+                                    idTemperature="Temperature_290_310" indexTemperature="0"/>
+                                    </SurfaceExitanceProperties>
+                                </GroupOpticalProperties>
+                                <GroupTypeProperties>
+                                    <ObjectTypeLink
+                                    identOType="Corns_color" indexOT="104"/>
+                                </GroupTypeProperties>
+                            </Group>
+                            <Group groupDEMMode="0" hidden="0"
+                                hideRB="0" isLAICalc="0" name="Leaves"
+                                num="2" transparent="0">
+                                <GroupOpticalProperties>
+                                    <SurfaceOpticalProperties doubleFace="0">
+                                    <OpticalPropertyLink
+                                    ident="Lambertian_Phase_Function_1"
+                                    indexFctPhase="0" type="0"/>
+                                    </SurfaceOpticalProperties>
+                                    <SurfaceExitanceProperties
+                                    doubleFace="0" useTemperaturePerTriangle="0">
+                                    <ThermalPropertyLink
+                                    idTemperature="Temperature_290_310" indexTemperature="0"/>
+                                    </SurfaceExitanceProperties>
+                                </GroupOpticalProperties>
+                                <GroupTypeProperties>
+                                    <ObjectTypeLink identOType="Leaf" indexOT="102"/>
+                                </GroupTypeProperties>
+                            </Group>
+                            <Group groupDEMMode="0" hidden="0"
+                                hideRB="0" isLAICalc="0" name="Stem"
+                                num="3" transparent="0">
+                                <GroupOpticalProperties>
+                                    <SurfaceOpticalProperties doubleFace="0">
+                                    <OpticalPropertyLink
+                                    ident="Lambertian_Phase_Function_1"
+                                    indexFctPhase="0" type="0"/>
+                                    </SurfaceOpticalProperties>
+                                    <SurfaceExitanceProperties
+                                    doubleFace="0" useTemperaturePerTriangle="0">
+                                    <ThermalPropertyLink
+                                    idTemperature="Temperature_290_310" indexTemperature="0"/>
+                                    </SurfaceExitanceProperties>
+                                </GroupOpticalProperties>
+                                <GroupTypeProperties>
+                                    <ObjectTypeLink identOType="Leaf" indexOT="102"/>
+                                </GroupTypeProperties>
+                            </Group>
+                        </Groups>
+                    </Object>
+                    <Object
+                        file_src="3D_Objects\Maize\Maize_Alone_2m_panicle_corn.obj"
+                        hasGroups="1" hidden="0" hideRB="0"
+                        isDisplayed="1" name="panicle_corn" num="0"
+                        objectColor="125 0 125" objectDEMMode="0" repeatedOnBorder="1">
+                        <GeometricProperties>
+                            <Dimension3D xdim="1.0541830360889435"
+                                ydim="0.9911459982395172" zdim="2.0895819664001465"/>
+                            <Center3D xCenter="0.050698503851890564"
+                                yCenter="0.03130500018596649" zCenter="1.0447909832000732"/>
+                            <ScaleProperties xScaleDeviation="0.0"
+                                xscale="1.00" yScaleDeviation="0.0"
+                                yscale="1.00" zScaleDeviation="0.0" zscale="1.00"/>
+                            <RotationProperties xRotDeviation="0.0"
+                                xrot="0.00" yRotDeviation="0.0"
+                                yrot="0.00" zRotDeviation="0.0" zrot="0.00"/>
+                        </GeometricProperties>
+                        <ObjectOpticalProperties defineEtaFactors="0"
+                            isLAICalc="0" isSingleGlobalLai="0"
+                            sameExitanceObject="0" sameOPObject="0" transparent="0"/>
+                        <ObjectTypeProperties sameOTObject="0"/>
+                        <Groups>
+                            <Group groupDEMMode="0" hidden="0"
+                                hideRB="0" isLAICalc="0" name="Corn"
+                                num="1" transparent="0">
+                                <GroupOpticalProperties>
+                                    <SurfaceOpticalProperties doubleFace="0">
+                                    <OpticalPropertyLink
+                                    ident="Lambertian_Phase_Function_1"
+                                    indexFctPhase="0" type="0"/>
+                                    </SurfaceOpticalProperties>
+                                    <SurfaceExitanceProperties
+                                    doubleFace="0" useTemperaturePerTriangle="0">
+                                    <ThermalPropertyLink
+                                    idTemperature="Temperature_290_310" indexTemperature="0"/>
+                                    </SurfaceExitanceProperties>
+                                </GroupOpticalProperties>
+                                <GroupTypeProperties>
+                                    <ObjectTypeLink
+                                    identOType="Corns_color" indexOT="104"/>
+                                </GroupTypeProperties>
+                            </Group>
+                            <Group groupDEMMode="0" hidden="0"
+                                hideRB="0" isLAICalc="0" name="Leaves"
+                                num="2" transparent="0">
+                                <GroupOpticalProperties>
+                                    <SurfaceOpticalProperties doubleFace="0">
+                                    <OpticalPropertyLink
+                                    ident="Lambertian_Phase_Function_1"
+                                    indexFctPhase="0" type="0"/>
+                                    </SurfaceOpticalProperties>
+                                    <SurfaceExitanceProperties
+                                    doubleFace="0" useTemperaturePerTriangle="0">
+                                    <ThermalPropertyLink
+                                    idTemperature="Temperature_290_310" indexTemperature="0"/>
+                                    </SurfaceExitanceProperties>
+                                </GroupOpticalProperties>
+                                <GroupTypeProperties>
+                                    <ObjectTypeLink identOType="Leaf" indexOT="102"/>
+                                </GroupTypeProperties>
+                            </Group>
+                            <Group groupDEMMode="0" hidden="0"
+                                hideRB="0" isLAICalc="0" name="Panicle"
+                                num="3" transparent="0">
+                                <GroupOpticalProperties>
+                                    <SurfaceOpticalProperties doubleFace="0">
+                                    <OpticalPropertyLink
+                                    ident="Lambertian_Phase_Function_1"
+                                    indexFctPhase="0" type="0"/>
+                                    </SurfaceOpticalProperties>
+                                    <SurfaceExitanceProperties
+                                    doubleFace="0" useTemperaturePerTriangle="0">
+                                    <ThermalPropertyLink
+                                    idTemperature="Temperature_290_310" indexTemperature="0"/>
+                                    </SurfaceExitanceProperties>
+                                </GroupOpticalProperties>
+                                <GroupTypeProperties>
+                                    <ObjectTypeLink
+                                    identOType="Panicle_color" indexOT="105"/>
+                                </GroupTypeProperties>
+                            </Group>
+                            <Group groupDEMMode="0" hidden="0"
+                                hideRB="0" isLAICalc="0" name="Stem"
+                                num="4" transparent="0">
+                                <GroupOpticalProperties>
+                                    <SurfaceOpticalProperties doubleFace="0">
+                                    <OpticalPropertyLink
+                                    ident="Lambertian_Phase_Function_1"
+                                    indexFctPhase="0" type="0"/>
+                                    </SurfaceOpticalProperties>
+                                    <SurfaceExitanceProperties
+                                    doubleFace="0" useTemperaturePerTriangle="0">
+                                    <ThermalPropertyLink
+                                    idTemperature="Temperature_290_310" indexTemperature="0"/>
+                                    </SurfaceExitanceProperties>
+                                </GroupOpticalProperties>
+                                <GroupTypeProperties>
+                                    <ObjectTypeLink identOType="Leaf" indexOT="102"/>
+                                </GroupTypeProperties>
+                            </Group>
+                        </Groups>
+                    </Object>
+                </ModelList>
+            </Field>
+        </ObjectFields>
+    </object_3d>
+</DartFile>

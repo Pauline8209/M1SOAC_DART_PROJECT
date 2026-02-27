@@ -35,6 +35,7 @@ str_lambda_max  = [f"dart.band{i}.lambdaMax" for i in range(20)]
 str_lambda_min  = [f"dart.band{i}.lambdaMin" for i in range(20)]
 str_exitance    = [f"dart.band{i}.COUPL.exitance" for i in range(20)]
 str_irradiance  = [f"dart.band{i}.COUPL.irradiance" for i in range(20)]
+str_albedo      = [f"dart.band{i}.COUPL.albedoOuTemperature" for i in range(20)]
 
 df_R = pd.read_csv(data_mode_R, sep=":", names=['variable', 'value'])
 exitance_R      = df_R[df_R['variable'].isin(str_exitance)]["value"].astype(float).values

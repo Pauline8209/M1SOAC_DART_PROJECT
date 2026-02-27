@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DartFile build="v1457" version="5.11.0">
+    <Phase accelerationEngine="2" calculatorMethod="0">
+        <AtmosphereRadiativeTransfer TOAtoBOA="2"/>
+        <ExpertModeZone expertMode="1" nbThreads="8" useExternalScripts="0"/>
+        <DartInputParameters linkPassiveRsRb="">
+            <SpectralDomainTir temperatureMode="0">
+                <skylTemperature SKYLForTemperatureAssignation="0.0"
+                    distanceBetweenIlluminationSubCenters="0.1" histogramThreshold="5.0"/>
+            </SpectralDomainTir>
+            <SpectralIntervals>
+                <SpectralIntervalsProperties bandNumber="0"
+                    deltaLambda="0.014999999999999996"
+                    meanLambda="0.40750000000000003" spectralDartMode="0"/>
+                <SpectralIntervalsProperties bandNumber="1"
+                    deltaLambda="0.014999999999999996"
+                    meanLambda="0.4225" spectralDartMode="0"/>
+                <SpectralIntervalsProperties bandNumber="2"
+                    deltaLambda="0.014999999999999996"
+                    meanLambda="0.4375" spectralDartMode="0"/>
+                <SpectralIntervalsProperties bandNumber="3"
+                    deltaLambda="0.014999999999999996"
+                    meanLambda="0.4525" spectralDartMode="0"/>
+                <SpectralIntervalsProperties bandNumber="4"
+                    deltaLambda="0.014999999999999996"
+                    meanLambda="0.4675" spectralDartMode="0"/>
+                <SpectralIntervalsProperties bandNumber="5"
+                    deltaLambda="0.014999999999999996"
+                    meanLambda="0.4825" spectralDartMode="0"/>
+                <SpectralIntervalsProperties bandNumber="6"
+                    deltaLambda="0.014999999999999996"
+                    meanLambda="0.4975" spectralDartMode="0"/>
+                <SpectralIntervalsProperties bandNumber="7"
+                    deltaLambda="0.014999999999999996"
+                    meanLambda="0.5125" spectralDartMode="0"/>
+                <SpectralIntervalsProperties bandNumber="8"
+                    deltaLambda="0.014999999999999996"
+                    meanLambda="0.5275" spectralDartMode="0"/>
+                <SpectralIntervalsProperties bandNumber="9"
+                    deltaLambda="0.014999999999999996"
+                    meanLambda="0.5425" spectralDartMode="0"/>
+                <SpectralIntervalsProperties bandNumber="10"
+                    deltaLambda="0.014999999999999996"
+                    meanLambda="0.5575" spectralDartMode="0"/>
+                <SpectralIntervalsProperties bandNumber="11"
+                    deltaLambda="0.014999999999999996"
+                    meanLambda="0.5725" spectralDartMode="0"/>
+                <SpectralIntervalsProperties bandNumber="12"
+                    deltaLambda="0.014999999999999996"
+                    meanLambda="0.5874999999999999" spectralDartMode="0"/>
+                <SpectralIntervalsProperties bandNumber="13"
+                    deltaLambda="0.014999999999999996"
+                    meanLambda="0.6025" spectralDartMode="0"/>
+                <SpectralIntervalsProperties bandNumber="14"
+                    deltaLambda="0.014999999999999996"
+                    meanLambda="0.6174999999999999" spectralDartMode="0"/>
+                <SpectralIntervalsProperties bandNumber="15"
+                    deltaLambda="0.014999999999999996"
+                    meanLambda="0.6325" spectralDartMode="0"/>
+                <SpectralIntervalsProperties bandNumber="16"
+                    deltaLambda="0.014999999999999996"
+                    meanLambda="0.6475" spectralDartMode="0"/>
+                <SpectralIntervalsProperties bandNumber="17"
+                    deltaLambda="0.014999999999999996"
+                    meanLambda="0.6625" spectralDartMode="0"/>
+                <SpectralIntervalsProperties bandNumber="18"
+                    deltaLambda="0.014999999999999996"
+                    meanLambda="0.6775" spectralDartMode="0"/>
+                <SpectralIntervalsProperties bandNumber="19"
+                    deltaLambda="0.014999999999999996"
+                    meanLambda="0.6924999999999999" spectralDartMode="0"/>
+            </SpectralIntervals>
+            <ImageSideIllumination disableSolarIllumination="0"
+                disableThermalEmission="0" sideIlluminationEnabled="0"/>
+            <nodeIlluminationMode irradianceMode="0">
+                <irradianceDatabaseNode databaseName="Solar_constant.db"
+                    irradianceColumn="irradiance"
+                    irradianceTable="TOASolar_THKUR"
+                    weightAtmosphereParameters="1" weightReflectanceParameters="1">
+                    <WeightingParameters sceneAverageTemperatureForPonderation="300"/>
+                </irradianceDatabaseNode>
+                <SpectralIrradiance>
+                    <CommonParameters commonIrradianceCheckBox="1"
+                        commonSkylCheckBox="1" irraDef="1"/>
+                    <SpectralIrradianceValue Skyl="0" bandNumber="0" irradiance="0"/>
+                    <SpectralIrradianceValue Skyl="0" bandNumber="1" irradiance="0"/>
+                    <SpectralIrradianceValue Skyl="0" bandNumber="2" irradiance="0"/>
+                    <SpectralIrradianceValue Skyl="0" bandNumber="3" irradiance="0"/>
+                    <SpectralIrradianceValue Skyl="0" bandNumber="4" irradiance="0"/>
+                    <SpectralIrradianceValue Skyl="0" bandNumber="5" irradiance="0"/>
+                    <SpectralIrradianceValue Skyl="0" bandNumber="6" irradiance="0"/>
+                    <SpectralIrradianceValue Skyl="0" bandNumber="7" irradiance="0"/>
+                    <SpectralIrradianceValue Skyl="0" bandNumber="8" irradiance="0"/>
+                    <SpectralIrradianceValue Skyl="0" bandNumber="9" irradiance="0"/>
+                    <SpectralIrradianceValue Skyl="0" bandNumber="10" irradiance="0"/>
+                    <SpectralIrradianceValue Skyl="0" bandNumber="11" irradiance="0"/>
+                    <SpectralIrradianceValue Skyl="0" bandNumber="12" irradiance="0"/>
+                    <SpectralIrradianceValue Skyl="0" bandNumber="13" irradiance="0"/>
+                    <SpectralIrradianceValue Skyl="0" bandNumber="14" irradiance="0"/>
+                    <SpectralIrradianceValue Skyl="0" bandNumber="15" irradiance="0"/>
+                    <SpectralIrradianceValue Skyl="0" bandNumber="16" irradiance="0"/>
+                    <SpectralIrradianceValue Skyl="0" bandNumber="17" irradiance="0"/>
+                    <SpectralIrradianceValue Skyl="0" bandNumber="18" irradiance="0"/>
+                    <SpectralIrradianceValue Skyl="0" bandNumber="19" irradiance="0"/>
+                </SpectralIrradiance>
+            </nodeIlluminationMode>
+        </DartInputParameters>
+        <EngineParameter>
+            <LuxCoreRenderEngineParameters
+                atmosphericRadiativeTransfer="0" linkDartLux=""
+                maximumRenderingTime="60" nbSceneRepetition="1"
+                pixelSize="1" targetRayDensityPerPixel="50">
+                <LuxCoreRenderExecutionParameters checkFrequency="1000"
+                    lightPropagationThreshold="1E-5"
+                    maximumScatteringOrder="80"
+                    russianRouletteEnable="0" sampler="1">
+                    <SamplerProperties adaptativeStrength="0.0"/>
+                </LuxCoreRenderExecutionParameters>
+                <PeriodicSave periodicSaveMethod="1">
+                    <PeriodicSaveByTime periodicSaveTime="20"/>
+                </PeriodicSave>
+                <RadiativeBudget meshGridXY="0.1" meshGridZ="0.1"
+                    nbIncidentDirections="50" subZoneRB="0"/>
+                <HybridAtmosphereBRFMap brfResolution="1" targetRayDensityPerDirection="50"/>
+            </LuxCoreRenderEngineParameters>
+        </EngineParameter>
+        <DartProduct>
+            <dartModuleProducts>
+                <CommonProducts JacobianProducts="0" perLightSource="0"
+                    polarizationProducts="0" radiativeBudgetProducts="0"/>
+                <FluxTrackingModeProducts brfProducts="1" temperaturePerTrianglePerCell="0">
+                    <FluxTrackingBiDirectionalProducts sunlitPerCell="0" sunlitPerTrianglePerCell="0"/>
+                    <BrfProductsProperties generatePerTypeProduct="0"
+                        image="2" luminanceProducts="0"
+                        maximalThetaImages="1.0"
+                        pixelDirectionImageGeneration="0"
+                        pixelToSceneCorrespondences="0" projection="0"
+                        sensorPlaneprojection="1"
+                        transmittanceImages="0" writeBrf="1">
+                        <BRFParameters brfFileType="0">
+                            <BRFBiDirParameters brfMap="1"
+                                brfResolution="1" targetRayDensityPerDirection="50"/>
+                        </BRFParameters>
+                    </BrfProductsProperties>
+                </FluxTrackingModeProducts>
+            </dartModuleProducts>
+            <maketModuleProducts areaMaketProducts="0" laiProducts="0"
+                linkMaketProducts="" objectGeneration="0"/>
+        </DartProduct>
+        <SensorImageSimulation importMultipleSensors="0"/>
+    </Phase>
+</DartFile>
